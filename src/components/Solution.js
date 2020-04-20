@@ -1,10 +1,11 @@
 import React from 'react';
+import Card from './Card';
 
 const Solution = (props) => {
   return (
-    <div class="box" id="solution">
-      {props.solution.map(litera => {
-        return (<div class="empty"></div>);
+    <div className="box" id="solution">
+      {props.solution.map((litera, i) => {
+        return (<Card id={i} className="empty"></Card>);
       })
       }        
      
