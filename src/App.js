@@ -1,8 +1,22 @@
 import React, {useEffect} from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 import { useSelector, useDispatch} from 'react-redux';
-import StatusBar from './layout/StatusBar';
+import StatusBar from './components/layout/StatusBar';
+import Landing from './components/dashboard/landing';
+import Dashboard from './components/dashboard/Dashboard';
+import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
 //import WordMaker from './containers/WordMaker';
 import './App.css';
+
+
 
 function App() {
   const dispatch = useDispatch();
@@ -14,19 +28,20 @@ function App() {
   let uName='';
 
   return (
-      <div className="App">
-        <header className="App-header">
-          <h1>eduGame</h1>
-          <p>Invata ca o joaca!</p>
-        </header>
-        <label for="uName">Nume</label>
-        <input type="text" name="uName" onChange={uName} value={uName}></input> 
-        <button onClick={(() => dispatch({type: 'LOAD_USER_DATA', payload: {uName}}))}> Load user </button>
-{console.log(`user ${user}`)}
+    <Router>
+
+    <div className="App">
+      {console.log(`user ${user}`)}
         <StatusBar user={user}/>
-              
-        
+        <Switch>
+          <Route exact path='/' component={Landing}/>
+          <Route path='/elev' component={Dashboard}/>
+          <Route path='/signin' component={SignIn}/>
+          <Route path='/signup' component={SignUp}/>
+        </Switch>
+             
       </div>
+    </Router>
   );
 }
 
