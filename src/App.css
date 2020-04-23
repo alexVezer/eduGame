@@ -39,7 +39,10 @@ h3 {
  margin: 5em 0;
 }
 
-
+.child-table, .camp{
+  margin-top: 30px;
+  
+}
 .box {
   margin: 2.5rem;
   

@@ -2,7 +2,11 @@ import { LOAD_USER_DATA, UPDATE_USER_DATA } from "../actions/types";
 
 
 const initialState = {
-  user: {}
+  user: {
+    
+
+
+  }
 };
 
 //let user = {};

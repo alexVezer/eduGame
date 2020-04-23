@@ -36,11 +36,11 @@ export class SignUp extends Component {
             <input type="text" id="clasa" onChange={this.handleChange}/>
           </div>
           <div className="input-field">
-            <label htmlfor="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input type="email" id="email" onChange={this.handleChange}/>
           </div>
           <div className="input-field">
-            <label htmlfor="password">Parola</label>
+            <label htmlFor="password">Parola</label>
             <input type="password" id="password" onChange={this.handleChange}/>
           </div>
           <div className="input-field">

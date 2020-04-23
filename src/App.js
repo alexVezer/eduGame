@@ -15,6 +15,7 @@ import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 //import WordMaker from './containers/WordMaker';
 import './App.css';
+import DashboardAdult from './components/dashboard/DashboardAdult';
 
 
 
@@ -23,21 +24,20 @@ function App() {
   // const users = useSelector(state => state.users);
   
   // JSON.stringify(dispatch({type:'LOAD_USER_DATA', payload: 1}));
-  const user = {};
-  console.log(`user ${user}`);
-  let uName='';
+  
 
   return (
     <Router>
 
     <div className="App">
-      {console.log(`user ${user}`)}
-        <StatusBar user={user}/>
+      {console.log(`user`)}
+        <StatusBar />
         <Switch>
           <Route exact path='/' component={Landing}/>
           <Route path='/elev' component={Dashboard}/>
           <Route path='/signin' component={SignIn}/>
           <Route path='/signup' component={SignUp}/>
+          <Route path='/profile' component={DashboardAdult}/>
         </Switch>
              
       </div>
