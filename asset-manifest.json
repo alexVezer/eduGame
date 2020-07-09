@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/eduGame/static/css/main.0ea21dba.chunk.css",
+    "main.js": "/eduGame/static/js/main.cac32a00.chunk.js",
+    "main.js.map": "/eduGame/static/js/main.cac32a00.chunk.js.map",
+    "runtime-main.js": "/eduGame/static/js/runtime-main.34e1a767.js",
+    "runtime-main.js.map": "/eduGame/static/js/runtime-main.34e1a767.js.map",
+    "static/js/2.dce38d7d.chunk.js": "/eduGame/static/js/2.dce38d7d.chunk.js",
+    "static/js/2.dce38d7d.chunk.js.map": "/eduGame/static/js/2.dce38d7d.chunk.js.map",
+    "index.html": "/eduGame/index.html",
+    "precache-manifest.644948ab6587f4e274b5b1f97d94d85f.js": "/eduGame/precache-manifest.644948ab6587f4e274b5b1f97d94d85f.js",
+    "service-worker.js": "/eduGame/service-worker.js",
+    "static/css/main.0ea21dba.chunk.css.map": "/eduGame/static/css/main.0ea21dba.chunk.css.map",
+    "static/js/2.dce38d7d.chunk.js.LICENSE.txt": "/eduGame/static/js/2.dce38d7d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34e1a767.js",
+    "static/js/2.dce38d7d.chunk.js",
+    "static/css/main.0ea21dba.chunk.css",
+    "static/js/main.cac32a00.chunk.js"
+  ]
+}
